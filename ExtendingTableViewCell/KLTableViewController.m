@@ -41,12 +41,12 @@
     
     // Intialize some table view cell data
     self.tableData = [@[
-                       @{@"title" : @"Birthday", @"type" : @"datepicker"},
-                       @{@"title" : @"Wake Up", @"type" : @"datepicker"},
-                       @{@"title" : @"Address", @"type" : @"normal", @"value" : @"1 Infinite Loop Cupertino, CA 95014"},
-                       @{@"title" : @"Gedner", @"type" : @"picker", @"value" : @"Male"},
-                       @{@"title" : @"Telephone", @"type" : @"normal", @"value" : @"1(408)-996-1010"}
-                       ] mutableCopy];
+                        @{@"title" : @"Address", @"type" : @"normal", @"value" : @"1 Infinite Loop Cupertino, CA 95014"},
+                        @{@"title" : @"Birthday", @"type" : @"datepicker"},
+                        @{@"title" : @"Gender", @"type" : @"picker", @"value" : @"Male"},
+                        @{@"title" : @"Wake Up", @"type" : @"datepicker"},
+                        @{@"title" : @"Telephone", @"type" : @"normal", @"value" : @"1(408)-996-1010"}
+                        ] mutableCopy];
     
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateStyle = NSDateFormatterShortStyle;
@@ -118,6 +118,7 @@
             NSString *title = rowData[@"title"];
             if ([title isEqualToString:@"Birthday"]) {
                 datePickerViewCell.datePicker.datePickerMode = UIDatePickerModeDate;
+                
             } else if ([title isEqualToString:@"Wake Up"]) {
                 datePickerViewCell.datePicker.datePickerMode = UIDatePickerModeTime;
             }
