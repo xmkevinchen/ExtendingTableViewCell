@@ -471,6 +471,7 @@
 				0A1C805F196AFD31003C1AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1C8060196AFD31003C1AD2 /* Build configuration list for PBXNativeTarget "ExtendingTableViewCellTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +480,7 @@
 				0A1C8062196AFD31003C1AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
